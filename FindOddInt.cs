@@ -9,7 +9,5 @@ namespace Solution
             var answer = seq.GroupBy(x => x).Where(x => x.Count() % 2 != 0).Select(x => x.First()).FirstOrDefault();
             return answer;
         }
-
-
     }
 }
